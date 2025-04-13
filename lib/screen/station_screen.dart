@@ -32,7 +32,7 @@ class _ChargingStationPageState extends State<StationScreen> {
       context: context,
       initialDate: DateTime.now(),
       firstDate: DateTime.now(),
-      lastDate: DateTime.now().add(const Duration(days: 30)),
+      lastDate: DateTime.now().add(const Duration(days: 7)),
     );
     if (picked != null && picked != selectedDate) {
       setState(() {
@@ -64,6 +64,8 @@ class _ChargingStationPageState extends State<StationScreen> {
   void initState() {
     getcurrentlocation();
     super.initState();
+    
+    
   }
 
   Future<void> getcurrentlocation() async {

@@ -35,17 +35,19 @@ class Card2 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Expanded(
-                      child: anmaition == true
+                 Expanded(child: 
+                       anmaition == true
                           ? Lottie.asset(asset)
-                          : ClipRRect(
-                              borderRadius: BorderRadius.circular(100),
-                              child: Image.asset(
-                                asset,
-                                fit: BoxFit.cover,
-                                width: 150,
-                                height: 150,
-                              ))),
+                          : 
+                            ClipRRect(
+                                borderRadius: BorderRadius.circular(100),
+                                child: Image.asset(
+                                  asset,
+                                  fit: BoxFit.cover,
+                                  width: 130,
+                                  height: 130,
+                                )),
+                 ),
                   Expanded(
                     child: Wrap(
                         runAlignment: WrapAlignment.center,

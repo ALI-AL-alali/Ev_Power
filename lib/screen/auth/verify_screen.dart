@@ -45,7 +45,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
                         'حسناً',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(255, 201, 8, 8),
+                          color: Colors.indigo,
                         ),
                       ),
                     ),
@@ -82,7 +82,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
             'التحقق من الرمز',
             style: TextStyle(color: Colors.white),
           ),
-          backgroundColor: const Color.fromARGB(255, 201, 8, 8),
+          backgroundColor: Colors.indigo,
           iconTheme: const IconThemeData(color: Colors.white),
           actions: [
             IconButton(
@@ -113,9 +113,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
                     defaultPinTheme: defaultPinTheme,
                     focusedPinTheme: defaultPinTheme.copyWith(
                       decoration: defaultPinTheme.decoration!.copyWith(
-                        border: Border.all(
-                          color: const Color.fromARGB(255, 201, 8, 8),
-                        ),
+                        border: Border.all(color: Colors.indigo),
                       ),
                     ),
                     onCompleted: (pin) => _verifyCode(pin),
@@ -135,7 +133,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
                   const SizedBox(height: 20),
                   MyButton2(
                     Title: _isLoading ? 'جاري التحقق...' : 'تحقق',
-                    color: const Color.fromARGB(255, 201, 8, 8),
+                    color: Colors.indigo,
                     onPressed: () => _verifyCode(_pinController.text),
                   ),
                 ],
